@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="ContactsManager.Tests/ContactsManager.Tests.csproj" />
+  <Project Path="ContactsManager/ContactsManager.csproj" />
+</Solution>
