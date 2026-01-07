@@ -1,4 +1,7 @@
 <Solution>
+  <Project Path="ContactsManager.Entities/ContactsManager.Entities.csproj" />
+  <Project Path="ContactsManager.ServiceContracts/ContactsManager.ServiceContracts.csproj" />
+  <Project Path="ContactsManager.Services/ContactsManager.Services.csproj" />
   <Project Path="ContactsManager.Tests/ContactsManager.Tests.csproj" />
   <Project Path="ContactsManager/ContactsManager.csproj" />
 </Solution>
