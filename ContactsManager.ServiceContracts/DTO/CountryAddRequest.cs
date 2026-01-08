@@ -1,4 +1,5 @@
-﻿using ContactsManager.Entities;
+﻿using System.ComponentModel.DataAnnotations;
+using ContactsManager.Entities;
 
 namespace ContactsManager.ServiceContracts.DTO;
 
@@ -7,6 +8,7 @@ namespace ContactsManager.ServiceContracts.DTO;
 /// </summary>
 public class CountryAddRequest
 {
+    [Required(ErrorMessage = "Person name cannot be blank.")]
     public string? CountryName { get; set; }
 
     public Country ToCountry()

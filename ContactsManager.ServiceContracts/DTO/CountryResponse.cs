@@ -32,6 +32,9 @@ public class CountryResponse
     }
 }
 
+/// <summary>
+///     Extension method to convert an object of Country to CountryResponse
+/// </summary>
 public static class CountryExtensions
 {
     public static CountryResponse ToCountryResponse(this Country country)

@@ -19,10 +19,10 @@ public class CountriesServiceTests
     public void GetAllCountries_ByDefault_ShouldBeEmpty()
     {
         // Act
-        var countryResponses = _countriesService.GetAllCountries();
+        var countryResponse = _countriesService.GetAllCountries();
 
         // Assert
-        Assert.Empty(countryResponses);
+        Assert.Empty(countryResponse);
     }
 
     [Fact]
@@ -45,7 +45,7 @@ public class CountriesServiceTests
 
         foreach (var expectedCountry in countryResponses)
             // Assert
-            Assert.Contains(expectedCountry, countryResponses);
+            Assert.Contains(expectedCountry, actualCountryResponses);
     }
 
     #endregion
