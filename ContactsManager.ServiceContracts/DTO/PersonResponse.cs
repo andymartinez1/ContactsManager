@@ -1,4 +1,5 @@
-﻿using ContactsManager.Entities;
+﻿using System.ComponentModel.DataAnnotations;
+using ContactsManager.Entities;
 using ContactsManager.ServiceContracts.Enums;
 
 namespace ContactsManager.ServiceContracts.DTO;
@@ -10,10 +11,12 @@ public class PersonResponse
 {
     public Guid PersonID { get; set; }
 
+    [Display(Name = "Person Name")]
     public string? PersonName { get; set; }
 
     public string? Email { get; set; }
 
+    [Display(Name = "Date of Birth")]
     public DateTime? DateOfBirth { get; set; }
 
     public string? Gender { get; set; }
@@ -24,6 +27,7 @@ public class PersonResponse
 
     public string? Address { get; set; }
 
+    [Display(Name = "Receive News Letter?")]
     public bool ReceiveNewsLetter { get; set; }
 
     public double? Age { get; set; }
